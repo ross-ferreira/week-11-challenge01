@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 // import { createStore } from "redux";
 
 //for REDUX LOCAL STORAGE
@@ -51,7 +51,7 @@ const scoring = (state,initial) => {
         score:newScore,
     }
 }
-
+// called Function Composition: serving(server(player2(state)))
 const reducer = (state, action) => {
     switch (action.type) {
         case "INCREMENT_P1": return serving(server(player1(state)));;;
