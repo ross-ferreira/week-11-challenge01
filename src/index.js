@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
-// import { createStore } from "redux";
 
-//for REDUX LOCAL STORAGE
-import { createStore, compose } from "redux";
-import persistState from "redux-localstorage";
+
+import {Provider} from "react-redux";
+
+import App from './components/App';
+
 import store from './data/store';
+
+//Now that REACT REDUX is installed lets add {Provider}
+
 
 // store.subscribe(() => {
 //     let state = store.getState();
@@ -18,23 +21,23 @@ import store from './data/store';
 //     console.log(state.switchServer);
  
 // });
-const render = () => {
-    let state = store.getState();
-    // pass in state.value as a value prop
-    ReactDOM.render(
-    <App 
-        player1Score={state.player1 } 
-        player2Score={ state.player2 } 
-        handleIncrementP1={ () => store.dispatch({ type: "INCREMENT_P1" }) }
-        handleIncrementP2={ () => store.dispatch({ type: "INCREMENT_P2" }) }
-        handleIncrementR0={ () => store.dispatch({ type: "RESET" }) }
-        style={state.serving}
-        score={state.score}
-        />, 
-    document.getElementById("root")
-    ); };
-    render();
 
-    store.subscribe(render); // render when state changes render(); // render when page loads using initial state
+let state = store.getState();
+    // pass in state.value as a value prop
+ReactDOM.render(
+    <Provider store={store}>
+        <App 
+            player1Score={state.player1 } 
+            player2Score={ state.player2 } 
+            handleIncrementP1={ () => store.dispatch({ type: "INCREMENT_P1" }) }
+            handleIncrementP2={ () => store.dispatch({ type: "INCREMENT_P2" }) }
+            handleIncrementR0={ () => store.dispatch({ type: "RESET" }) }
+            style={state.serving}
+            score={state.score}
+        />
+    </Provider>, 
+document.getElementById("root")
+);
+ 
 
 
