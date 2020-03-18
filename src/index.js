@@ -27,16 +27,10 @@ let state = store.getState();
 ReactDOM.render(
     <Provider store={store}>
         <App 
-            player1Score={state.player1 } 
-            player2Score={ state.player2 } 
-            handleIncrementP1={ () => store.dispatch({ type: "INCREMENT_P1" }) }
-            handleIncrementP2={ () => store.dispatch({ type: "INCREMENT_P2" }) }
-            handleIncrementR0={ () => store.dispatch({ type: "RESET" }) }
-            style={state.serving}
-            score={state.score}
+            // handleIncrementR0={ () => store.dispatch({ type: "RESET" }) }
         />
     </Provider>, 
-document.getElementById("root")
+    document.getElementById("root")
 );
  
 

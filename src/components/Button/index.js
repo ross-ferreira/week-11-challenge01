@@ -1,25 +1,20 @@
-import React, { useState } from "react";
+import {connect} from "react-redux";
+
+import Button from './component';
 
 
- const Button = ({handleIncrementR0}) => {
+const mapDispatchToProps= (dispatch) => {
+  return { 
+      
+      handleIncrementR0:() => {
+          dispatch({
+              type:"RESET",
+          })
+      }
 
-  return (
-    <button onClick={ handleIncrementR0 } className="btn btn-danger">Reset</button>
-  )
+  };
 }
-export default Button;
 
+export default  connect(null,mapDispatchToProps)(Button);
 
-
-// import {connect} from "react-redux";
-
-// import Button from './component';
-
-// const mapStateToProps= (state) => {
-//   return {
-
-//   };
-// }
-
-// export default  connect(mapStateToProps)(Button);
 

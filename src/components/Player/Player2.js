@@ -1,24 +1,32 @@
-import React, { useState } from "react";
+import {connect} from "react-redux";
+
+import Player from './Player';
 
 
- const Player2 = ({player1Score,player2Score,handleIncrementP2,handleIncrementP1,style}) => {
+const mapStateToProps= (state) => {
+  return { 
+      
+    winner:(state.player1 + state.player2)>20,
+    style: state.serving === "player2",
+    title:"player1",
+    score: state.player2,
 
-  return (
-    <>
-    <div className="row mb-4" >
-    <div className="col-md-4 mt-4 ">
-                <div className={"card text-center " + (style === "player2" ? "bg-dark text-white": "")}>
-                    <h5 className="card-header">Player 2</h5>
-                    <div className="card-body">
-                        <p className="card-text display-1">{player2Score}</p>
-                    </div>
-                    <div className="card-footer">
-                        <button onClick={ (player1Score + player2Score) > 20 ? null : handleIncrementP2 } className="form-control btn btn-success">+</button>
-                    </div>
-                </div>
-            </div>
-            </div>
-    </>
-  );
+  };
 }
-export default Player2;
+
+const mapDispatchToProps= (dispatch) => {
+    return { 
+        
+        handleIncrement:() => {
+            dispatch({
+                type:"INCREMENT_P2",
+            })
+        }
+  
+    };
+  }
+
+export default  connect(mapStateToProps,mapDispatchToProps)(Player);
+
+
+// winner, handleIncrement,style,title,score

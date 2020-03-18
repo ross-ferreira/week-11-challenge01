@@ -13,17 +13,17 @@ const App = ({player1Score,player2Score,handleIncrementP2,handleIncrementP1,hand
     <React.Fragment>
       <Router>
         <Header/>
-          <Player1 exact path="/" player1Score={player1Score} style={style} handleIncrementP1={handleIncrementP1} player2Score={player2Score} style={style} handleIncrementP2={handleIncrementP2} />
-          <Player2 exact path="/" player1Score={player1Score} style={style} handleIncrementP1={handleIncrementP1} player2Score={player2Score} style={style} handleIncrementP2={handleIncrementP2} />
-          <br/>
-          <WinnerBoard exact path="/" player1Score={player1Score} player2Score={player2Score} />
-          <br/>
-          <Button exact path="/" handleIncrementR0={handleIncrementR0} />
-          <br/>
-          <ScoreHistory exact path="/" score={score}/>
+        <Route exact path="/">
+            <Player1/>
+            <Player2/>
+            <br/>
+            <WinnerBoard />
+            <br/>
+            <Button />
+            <br/>
+            <ScoreHistory />
+          </Route>
       </Router>
-
-
     </React.Fragment>
 );
 
