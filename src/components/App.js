@@ -7,9 +7,10 @@ import Button from './Button'
 import ScoreHistory from "./ScoreHistory";
 import Player1 from "./Player/Player1";
 import Player2 from "./Player/Player2";
+import StartGame from "./StartGame/StartGame";
 
 
-const App = ({player1Score,player2Score,handleIncrementP2,handleIncrementP1,handleIncrementR0,style,score}) => (
+const App = () => (
     <React.Fragment>
       <Router>
         <Header/>
@@ -22,6 +23,9 @@ const App = ({player1Score,player2Score,handleIncrementP2,handleIncrementP1,hand
             <Button />
             <br/>
             <ScoreHistory />
+          </Route>
+          <Route exact path= "/startgame">
+            <StartGame/>
           </Route>
       </Router>
     </React.Fragment>

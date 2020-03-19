@@ -15,4 +15,8 @@ export default {
             }
         }
     ],
+    winningScore:21,
+    alternateServer:5,
+    player1Name:"",
+    player2Name:"",
 };

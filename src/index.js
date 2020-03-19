@@ -26,9 +26,7 @@ let state = store.getState();
     // pass in state.value as a value prop
 ReactDOM.render(
     <Provider store={store}>
-        <App 
-            // handleIncrementR0={ () => store.dispatch({ type: "RESET" }) }
-        />
+        <App/>
     </Provider>, 
     document.getElementById("root")
 );
