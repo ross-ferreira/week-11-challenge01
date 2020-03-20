@@ -15,3 +15,16 @@ export const resetButton = () => {
         type: "RESET",
     }
 }
+
+export const startGame = (valueP1,valueP2,valueWinScore,altServe) => {
+    return {
+        type: "START_GAME",
+        player1Name: valueP1,
+        player2Name: valueP2,
+        winningScore: +valueWinScore,
+        alternateServer: +altServe,
+
+    }
+}
+//value is just the passed value from the form being submitted
+

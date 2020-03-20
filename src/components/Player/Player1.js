@@ -9,7 +9,7 @@ const mapStateToProps= (state) => {
       
     winner:(state.player1 + state.player2)>20,
     style: state.serving === "player1",
-    title:"player1",
+    title: state.player1Name,
     score: state.player1,
 
   };

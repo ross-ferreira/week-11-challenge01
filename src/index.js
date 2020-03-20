@@ -9,6 +9,11 @@ import App from './components/App';
 
 import store from './data/store';
 
+
+import { createStore, applyMiddleware, compose } from "redux";
+
+import thunk from "redux-thunk";
+
 //Now that REACT REDUX is installed lets add {Provider}
 
 

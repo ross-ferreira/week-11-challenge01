@@ -1,27 +1,27 @@
 import {connect} from "react-redux";
+import history from "../../history";
 
 import StartGame from './StartGame';
+import {startGame} from '../../data/actions'
 
 
 const mapStateToProps= (state) => {
   return { 
-      
-    // winner:(state.player1 + state.player2)>20,
-    // style: state.serving === "player2",
-    // title:"player1",
-    // score: state.player2,
-
+    winningScore: state.winningScore,
+    alternateServer: state.alternateServer,
+    player1Name: state.player1Name,
   };
 }
 
 const mapDispatchToProps= (dispatch) => {
     return { 
         
-        handleIncrement:() => {
-            dispatch({
-                type:"START_GAME",
-            })
-        }
+        handleFormSubmit:(valueP1,valueP2,valueWinScore,altServe) => {
+            dispatch( startGame(valueP1,valueP2,valueWinScore,altServe) );
+            // go to the homepage
+            history.push("/");
+        },
+
   
     };
   }
