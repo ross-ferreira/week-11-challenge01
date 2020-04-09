@@ -1,4 +1,5 @@
 export default {
+    loaded: true,
     player1: 0,
     player2: 0,
     serving: "player1",
@@ -19,4 +20,5 @@ export default {
     alternateServer: 5,
     player1Name: "",
     player2Name: "",
+
 };

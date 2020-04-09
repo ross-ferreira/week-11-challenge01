@@ -19,10 +19,10 @@ export const resetButton = () => {
 export const startGame = (valueP1,valueP2,valueWinScore,altServe) => {
     return {
         type: "START_GAME",
-        player1Name: valueP1,
-        player2Name: valueP2,
-        winningScore: +valueWinScore,
-        alternateServer: +altServe,
+            player1Name: valueP1,
+            player2Name: valueP2,
+            winningScore: +valueWinScore,
+            alternateServer: +altServe,
 
     }
 }

@@ -10,9 +10,11 @@ import App from './components/App';
 import store from './data/store';
 
 
-import { createStore, applyMiddleware, compose } from "redux";
-
-import thunk from "redux-thunk";
+// for Testing Axios is working
+// import axiosConfig from './axios';
+// axiosConfig.get("/").then(({data})=> {
+//     console.log(data);
+// })
 
 //Now that REACT REDUX is installed lets add {Provider}
 
