@@ -17,7 +17,7 @@ const App = () => (
     <React.Fragment>
       <Router history={ history }>
         <Header/>
-        <Route exact path="/">
+        <Route exact path="/game">
             <div class="players-cont">
               <Player1 class="score-display"/>
               <Player2 class="score-display"/>

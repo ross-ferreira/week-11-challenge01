@@ -19,7 +19,7 @@ const mapDispatchToProps= (dispatch) => {
         handleFormSubmit:(valueP1,valueP2,valueWinScore,altServe) => {
             dispatch( startGame(valueP1,valueP2,valueWinScore,altServe) );
             // go to the homepage
-            history.push("/");
+            history.push("/game");
         },
 
   
