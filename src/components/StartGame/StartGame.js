@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import {Link} from 'react-router-dom';
+
 
  const StartGame = ({winningScore,alternateServer,player1Name,handleFormSubmit,player2Name}) => {
 
@@ -52,7 +54,9 @@ import React, { useState } from "react";
                     <option value="7">7</option>
                 </select>
             </div>
+            <Link to="/game">
             <button type="submit" class="btn btn-success">StartGame</button>
+            </Link>
         </form>
     </>
   );
