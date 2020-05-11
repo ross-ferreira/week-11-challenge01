@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/week-11-challenge01/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/week-11-challenge01/static/js/main.0005316d.chunk.js",
-    "main.js.map": "/week-11-challenge01/static/js/main.0005316d.chunk.js.map",
-    "runtime-main.js": "/week-11-challenge01/static/js/runtime-main.6dee92c1.js",
-    "runtime-main.js.map": "/week-11-challenge01/static/js/runtime-main.6dee92c1.js.map",
-    "static/js/2.161df38c.chunk.js": "/week-11-challenge01/static/js/2.161df38c.chunk.js",
-    "static/js/2.161df38c.chunk.js.map": "/week-11-challenge01/static/js/2.161df38c.chunk.js.map",
-    "index.html": "/week-11-challenge01/index.html",
-    "precache-manifest.d6c78c015605920cd24806c0aff97ee3.js": "/week-11-challenge01/precache-manifest.d6c78c015605920cd24806c0aff97ee3.js",
-    "service-worker.js": "/week-11-challenge01/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/week-11-challenge01/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.161df38c.chunk.js.LICENSE.txt": "/week-11-challenge01/static/js/2.161df38c.chunk.js.LICENSE.txt"
+    "main.css": "/week-11-challenge01/startgame/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/week-11-challenge01/startgame/static/js/main.c1b3c8b5.chunk.js",
+    "main.js.map": "/week-11-challenge01/startgame/static/js/main.c1b3c8b5.chunk.js.map",
+    "runtime-main.js": "/week-11-challenge01/startgame/static/js/runtime-main.f4713c6e.js",
+    "runtime-main.js.map": "/week-11-challenge01/startgame/static/js/runtime-main.f4713c6e.js.map",
+    "static/js/2.4841d67f.chunk.js": "/week-11-challenge01/startgame/static/js/2.4841d67f.chunk.js",
+    "static/js/2.4841d67f.chunk.js.map": "/week-11-challenge01/startgame/static/js/2.4841d67f.chunk.js.map",
+    "index.html": "/week-11-challenge01/startgame/index.html",
+    "precache-manifest.f09480c7e07acd72b20280852aabfeba.js": "/week-11-challenge01/startgame/precache-manifest.f09480c7e07acd72b20280852aabfeba.js",
+    "service-worker.js": "/week-11-challenge01/startgame/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/week-11-challenge01/startgame/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.4841d67f.chunk.js.LICENSE.txt": "/week-11-challenge01/startgame/static/js/2.4841d67f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6dee92c1.js",
-    "static/js/2.161df38c.chunk.js",
+    "static/js/runtime-main.f4713c6e.js",
+    "static/js/2.4841d67f.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.0005316d.chunk.js"
+    "static/js/main.c1b3c8b5.chunk.js"
   ]
 }
